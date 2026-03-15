@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>F1 China Live - @germanvale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .stream-card { transition: all 0.3s; background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(51, 65, 85, 0.5); }
+        .stream-card:hover { transform: translateY(-5px); border-color: #3b82f6; }
+        .live-dot { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-[#0b1120] text-slate-200 font-sans pb-10">
+
+    <header class="p-6 border-b border-slate-800 bg-[#0f172a] sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-4xl mx-auto">
+            <div>
+                <h1 class="text-xl font-black text-red-500 tracking-tighter uppercase italic">GP CHINA LIVE</h1>
+                <p class="text-[9px] text-slate-500 font-bold uppercase tracking-widest">Global Stream Finder | @germanvale</p>
+            </div>
+            <div class="flex items-center gap-2 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/50">
+                <span class="w-2 h-2 bg-red-500 rounded-full live-dot"></span>
+                <span class="text-[10px] font-bold text-red-500 uppercase">En Vivo</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-5">
+        
+        <div class="mb-8">
+            <h2 class="text-sm font-bold text-slate-400 uppercase mb-4 px-2 tracking-widest text-center">Selecciona un país transmisor</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <a href="https://tv.cctv.com/live/cctv5/" target="_blank" class="stream-card p-5 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-blue-400 font-bold">CHINA (Local)</p>
+                        <h3 class="font-bold">CCTV-5 Sports</h3>
+                        <p class="text-[10px] text-slate-500 mt-1 uppercase italic">Señal abierta original</p>
+                    </div>
+                    <span class="text-2xl">🇨🇳</span>
+                </a>
+
+                <a href="https://www.servustv.com/live/" target="_blank" class="stream-card p-5 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-blue-400 font-bold">AUSTRIA</p>
+                        <h3 class="font-bold">Servus TV</h3>
+                        <p class="text-[10px] text-slate-500 mt-1 uppercase italic">Transmisión HD Gratuita</p>
+                    </div>
+                    <span class="text-2xl">🇦🇹</span>
+                </a>
+
+                <a href="https://www.rtbf.be/auvio/direct/" target="_blank" class="stream-card p-5 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-blue-400 font-bold">BÉLGICA</p>
+                        <h3 class="font-bold">RTBF Auvio</h3>
+                        <p class="text-[10px] text-slate-500 mt-1 uppercase italic">Audio en Francés</p>
+                    </div>
+                    <span class="text-2xl">🇧🇪</span>
+                </a>
+
+                <a href="https://f1full.com/" target="_blank" class="stream-card p-5 rounded-2xl flex items-center justify-between border-blue-500/50">
+                    <div>
+                        <p class="text-xs text-yellow-500 font-bold">GLOBAL REPLAY</p>
+                        <h3 class="font-bold">F1 Full Coverage</h3>
+                        <p class="text-[10px] text-slate-500 mt-1 uppercase italic">Múltiples idiomas</p>
+                    </div>
+                    <span class="text-2xl">🌍</span>
+                </a>
+
+                <a href="https://f1tv.formula1.com/" target="_blank" class="stream-card p-5 rounded-2xl flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-slate-400 font-bold">MÉXICO / LATAM</p>
+                        <h3 class="font-bold">F1 TV Pro</h3>
+                        <p class="text-[10px] text-slate-500 mt-1 uppercase italic">Acceso por suscripción</p>
+                    </div>
+                    <span class="text-2xl">🇲🇽</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="bg-slate-800/30 p-6 rounded-3xl border border-slate-700">
+            <h3 class="text-xs font-black text-blue-400 uppercase mb-3">Recomendación Técnica @germanvale:</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                Para los canales de <b>Austria (ServusTV)</b> y <b>Bélgica (RTBF)</b>, el sitio detectará tu ubicación en México. Se recomienda usar un navegador con VPN integrado o extensión configurada en el país destino para desbloquear el video gratuito.
+            </p>
+            <div class="flex gap-2">
+                <span class="bg-blue-500/10 text-blue-500 text-[10px] px-2 py-1 rounded font-bold uppercase italic italic">Señal Gratuita</span>
+                <span class="bg-slate-700 text-slate-400 text-[10px] px-2 py-1 rounded font-bold uppercase italic">Sin Registro</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center p-10 opacity-40">
+        <p class="text-[10px] font-bold tracking-widest uppercase">Sistema de Enlace Global por @germanvale</p>
+    </footer>
+
+</body>
+</html>
